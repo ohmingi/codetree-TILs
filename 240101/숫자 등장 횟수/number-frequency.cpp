@@ -1,36 +1,30 @@
 #include <iostream>
 #include <vector>
+#include <set>
 
 using namespace std;
 
+int main() {
+    int n, m;
+    cin >> n >> m;
 
-int main(){
-	int n,m;
-	cin >> n >> m;
-	
-	vector<int> v;
-	
-	while(n--){
-		int a;
-		cin >> a;
-		v.push_back(a);
-	}
-	
-	
-	while(m--){
-		int a;
-		int count=0;
-		
-		cin >> a;
-		
-		vector<int>::iterator iter=v.begin();
-	
-		for(iter;iter!=v.end();iter++){
-			if(*iter==a){
-				count++;
-			}
-		}
-		
-		cout << count <<" ";
-	}
+    vector<int> v;
+
+    while (n--) {
+        int a;
+        cin >> a;
+        v.push_back(a);
+    }
+
+    set<int> s(v.begin(), v.end());
+
+    while (m--) {
+        int a;
+        cin >> a;
+
+        int count = s.count(a);
+        cout << count << " ";
+    }
+
+    return 0;
 }
