@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <set>
+#include <unordered_map>
 
 using namespace std;
 
@@ -16,13 +16,16 @@ int main() {
         v.push_back(a);
     }
 
-    set<int> s(v.begin(), v.end());
+    unordered_map<int, int> countMap;
+    for (int num : v) {
+        countMap[num]++;
+    }
 
     while (m--) {
         int a;
         cin >> a;
 
-        int count = s.count(a);
+        int count = countMap[a];
         cout << count << " ";
     }
 
