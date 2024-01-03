@@ -4,8 +4,11 @@
 using namespace std;
 
 int main(){
-	int n,k;
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
 	
+	int n,k;
+
 	cin >> n >> k;
 	
 	vector<int> v;
