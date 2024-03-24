@@ -1,5 +1,5 @@
 a=input().split()
-int(a[0])
-int(a[1])
+a[0]=int(a[0])
+a[1]=int(a[1])
 
-print(a+b)
+print(a[0]+a[1])
