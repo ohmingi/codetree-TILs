@@ -1,5 +1,5 @@
 c=input()
-a=int(input())
-b=int(input())
+a=float(input())
+b=float(input())
 
-print(f"{c} {a:.2f} {b:.2f}")
+print(c,f"{a:.2f}",f"{b:.2f}", sep="\n")
