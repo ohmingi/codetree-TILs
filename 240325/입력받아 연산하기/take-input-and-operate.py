@@ -1,6 +1,5 @@
-a=input().split()
-b=int(a[0])
-c=int(a[1])
+b=int(input())
+c=int(input())
 
 print(b+87)
 print(c%10)
