@@ -9,4 +9,4 @@ if b>=25:
     print("Obesity")
     exit()
 
-print(f"{b:.1f}")
+print(f"{b}")
