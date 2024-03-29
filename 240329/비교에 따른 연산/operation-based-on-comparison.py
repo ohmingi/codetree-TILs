@@ -5,4 +5,4 @@ c=int(a[1])
 if b>c:
     print(b*c)
 else:
-    print(c//a)
+    print(c//b)
