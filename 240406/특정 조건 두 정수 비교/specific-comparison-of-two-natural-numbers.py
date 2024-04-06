@@ -4,7 +4,7 @@ b=int(arr[1])
 
 if a>b:
     print(0, end=" ")
-elif a<b:
+else:
     print(1, end=" ")
 
 
