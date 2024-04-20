@@ -4,10 +4,10 @@ b=int(arr[1])
 c=int(arr[2])
 
 Min=a
-if b<a and b<c:
+if b<=a or b<=c:
     Min=b
 
-if c<a and c<b:
+if c<=a or c<=b:
     Min=c
 
 print(Min)
