@@ -7,7 +7,7 @@ if a==0:
     else:
         print("BOY")
 else:
-     if b>=19:
+    if b>=19:
         print("WOMAN")
     else:
         print("GIRL")
