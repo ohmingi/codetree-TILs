@@ -5,5 +5,5 @@ if a<90:
     print(0)
 elif b>=95:
     print(100000)
-elif b>=90:
+else:
     print(50000)
