@@ -1,4 +1,4 @@
-a,b=map(int(input().split()))
+a,b=list(map(int,input().split()))
 
 while a<=b:
     print(a,end=" ")
