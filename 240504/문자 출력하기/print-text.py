@@ -1,4 +1,4 @@
-a=int(input())
+a=input()
 
-for i in range(a):
-    print('G',end=" ")
+for i in range(8):
+    print(a,end=" ")
