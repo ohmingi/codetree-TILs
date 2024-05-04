@@ -1,4 +1,4 @@
 a=int(input())
 
 for i in range(a):
-    print('G'.end=" ")
+    print('G',end=" ")
