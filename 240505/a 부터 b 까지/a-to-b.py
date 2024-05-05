@@ -1,8 +1,12 @@
 a,b=list(map(int, input().split()))
+a1=2
 
 for i in range(a,b+1):
-    print(i)
-    if i%2!=0:
-        i*=2
+    if a>b:
+        break
+    print(a, end=" ")
+
+    if a%2!=0:
+        a*=2
     else:
-        i+=3
+        a+=3
