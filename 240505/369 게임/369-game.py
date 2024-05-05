@@ -11,7 +11,7 @@ for i in range(1,a+1):
         for t in range(len(s)):
             if s[t]=='3' or s[t]=='6' or s[t]=='9':
                 print(0, end=" ")
-                b=true
+                b=True
                 break
         if b==False:
             print(i, end=" ")
