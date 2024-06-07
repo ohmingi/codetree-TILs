@@ -27,6 +27,9 @@ int main() {
         int cnt=1;
         int cnt1=1;
 
+        bool b=false;
+        bool b1=false;
+
         int c=arr[i][0];
         int c1=arr[0][i];
 
@@ -41,8 +44,14 @@ int main() {
                 cnt1=1;
             }
 
-            if(cnt==m) count++;
-            if(cnt1==m) count++;
+            if(cnt==m && b==false) {
+                count++;
+                b=true;
+
+            }
+            if(cnt1==m && b1=false) {
+                count++;
+            }
 
             c=arr[i][t];
             c1=arr[t][i];
