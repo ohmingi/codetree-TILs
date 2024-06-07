@@ -18,10 +18,10 @@ int main() {
 
     int count=0;
 
-    if(m==1) {
+    /*if(m==1) {
         cout << 2*n;
         return 0;
-    }
+    }*/
 
     for(int i=0;i<n;i++){
         int cnt=1;
