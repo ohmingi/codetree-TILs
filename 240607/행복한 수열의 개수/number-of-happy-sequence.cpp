@@ -49,7 +49,7 @@ int main() {
                 b=true;
 
             }
-            if(cnt1==m && b1=false) {
+            if(cnt1==m && b1==false) {
                 count++;
             }
 
