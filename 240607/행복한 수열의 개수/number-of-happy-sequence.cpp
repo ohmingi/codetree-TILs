@@ -14,6 +14,12 @@ int main() {
 
     int count = 0;
 
+    // m이 1일 때
+    if (m == 1) {
+        cout << 2 * n;
+        return 0;
+    }
+
     // 각 행과 열에서 연속된 숫자가 m번 나타나는지 확인
     for (int i = 0; i < n; i++) {
         int cntRow = 1, cntCol = 1;
