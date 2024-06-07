@@ -51,6 +51,7 @@ int main() {
             }
             if(cnt1==m && b1==false) {
                 count++;
+                b1=true;
             }
 
             c=arr[i][t];
