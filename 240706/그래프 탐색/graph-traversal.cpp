@@ -5,6 +5,8 @@
 using namespace std;
 
 int n,m;
+int count = 0;
+
 
 int graph[MAX_NUM+1][MAX_NUM+1];
 bool vertex[MAX_NUM+1];
@@ -13,6 +15,7 @@ void dfs(int v){
     for(int i=1;i<=n;i++){
         if(graph[v][i] && !vertex[i]){
             vertex[i] = true;
+            count++;
             dfs(i);
         }
     }
@@ -20,8 +23,6 @@ void dfs(int v){
 
 int main() {
     cin >> n >> m;
-    
-    int count = 0;
 
     while(m--){
         int a,b;
@@ -30,13 +31,9 @@ int main() {
         graph[b][a]=1;
     }
 
-    for(int i=1;i<=n;i++){
-        if(vertex[i]==false){
-            dfs(i);
-            count++;
-        }
-    }
-    
+    visited[1] = true;
+    dfs(1);
+
     cout << count;
 
     return 0;
