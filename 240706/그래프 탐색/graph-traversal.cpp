@@ -31,7 +31,7 @@ int main() {
         graph[b][a]=1;
     }
 
-    visited[1] = true;
+    vertex[1] = true;
     dfs(1);
 
     cout << count;
