@@ -31,13 +31,14 @@ void dfs(int x, int y){
         int new_x = x + dx[i];
         int new_y = y + dy[i];
         if(go(new_x,new_y)){
-            if(new_x == n-1 && new_y == m-1 && check==0){
+            if(new_x == n-1 && new_y == m-1){
                 cout << 1;
                 check = 1;
                 return;
             }
             visited[new_x][new_y] = 1;
             dfs(new_x,new_y);
+            return;
         }
     }
 }
