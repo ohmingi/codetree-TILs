@@ -31,7 +31,7 @@ void dfs(int x, int y){
         int new_x = x + dx[i];
         int new_y = y + dy[i];
         if(go(new_x,new_y)){
-            if(new_x == n-1 && new_y == m-1){
+            if(new_x == n-1 && new_y == m-1 && check==0){
                 cout << 1;
                 check = 1;
                 return;
@@ -51,7 +51,7 @@ int main() {
             grid[i][t] = a;
         }
     }
-    //answer[0][0] = order++;
+
     visited[0][0] = 1;
     dfs(0,0);
 
