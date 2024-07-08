@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-#define mnum  101
+#define mnum  100
 
 int n,m;
 
 int grid[mnum][mnum];
-bool visited[5][5];
+bool visited[mnum][mnum];
 bool check = 0;
 
 bool inrange(int x, int y){
