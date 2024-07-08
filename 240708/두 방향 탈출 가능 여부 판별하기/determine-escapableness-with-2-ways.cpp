@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#define mnum  100
+#define mnum  101
 
 int n,m;
 
