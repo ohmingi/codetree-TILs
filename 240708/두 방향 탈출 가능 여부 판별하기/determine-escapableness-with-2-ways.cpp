@@ -44,8 +44,8 @@ void dfs(int x, int y){
 
 int main() {
     cin >> n >> m;
-    for(int i = 0; i<5 ; i++){
-        for(int t=0;t<5;t++){
+    for(int i = 0; i<n ; i++){
+        for(int t=0;t<m;t++){
             int a;
             cin >> a;
             grid[i][t] = a;
