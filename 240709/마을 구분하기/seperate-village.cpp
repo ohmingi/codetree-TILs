@@ -13,23 +13,23 @@ int c;
 vector<int>Count;
 int akdmf = 0;
 
-int dx[2] = {0,1};
-int dy[2] = {1,0};
+int dx[4] = {1,-1,0,0};
+int dy[4] = {0,0,1,-1};
 
 bool check(int x, int y){
     return 0<=x && x<n && 0<=y && y<n;
 }
 
 void dfs(int x, int y){
-    for(int i=0 ; i<2 ;i++){
+    for(int i=0 ; i<4 ;i++){
         int new_x = x + dx[i];
         int new_y = y + dy[i];
 
         if(check(new_x,new_y) && visited[new_x][new_y] == 0 && grid[new_x][new_y] == 1){
             c++;
             visited[new_x][new_y] = 1;
-            /*cout << new_x <<" " << new_y <<"\n";
-            cout << c << "\n";*/
+            //cout << new_x <<" " << new_y <<"\n";
+            //cout << c << "\n";
             dfs(new_x,new_y);
         }
     }
