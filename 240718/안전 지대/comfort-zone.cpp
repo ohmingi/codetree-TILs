@@ -47,7 +47,7 @@ int main() {
 
     int count = 0;
     int result = 0;
-    int aa;
+    int aa = 1;
 
     for(k;k<big;k++){
         count = 0;
